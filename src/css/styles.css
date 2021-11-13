@@ -10,6 +10,9 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  opacity: 0.8;
+  background-image: radial-gradient(#bebebe 0.5px, #fefefe 0.5px);
+  background-size: 10px 10px;
 }
 
 #search-box {
@@ -18,3 +21,34 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+.country-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.country-info {
+  padding: 1em;
+}
+
+.country-info dl {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+} 
+
+.country-info dl > * {
+  flex: 1 1 auto;
+} 
+
+.country-info dl > dt {
+  font-weight: bold;
+  flex-basis: 150px;
+} 
+
+.country-info dl > dd {
+  flex-basis: calc(100% - 200px);
+} 
+
+
